@@ -124,6 +124,116 @@ section {
 }
 /* ここまで */
 
+/* ## 資格 ########################### */
+#certifications {
+    background-color: #f8f9fa;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.certifications-table {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.certifications-column {
+    flex: 1;
+    max-width: 400px;
+}
+
+.certification-category {
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.certifications-column.valid .certification-category {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.certifications-column.expired .certification-category {
+    background-color: #4d96ff;
+    color: white;
+}
+
+.certification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.certification-list li {
+    margin-bottom: 20px;
+}
+
+.cert-content {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cert-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-shrink: 0;
+}
+
+.cert-icon.aws {
+    background-image: url('/img/icon/icon.png');
+}
+
+.cert-icon.lpic {
+    background-image: url('path-to-lpic-icon.png');
+}
+
+.cert-icon.ccna {
+    background-image: url('path-to-ccna-icon.png');
+}
+
+.cert-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cert-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.cert-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.certifications-column.expired .cert-content {
+    opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+    .certifications-table {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certifications-column {
+        width: 100%;
+    }
+}
+
+/* ## スキル ################################# */
 .skills {
     display: flex;
     flex-wrap: wrap;
