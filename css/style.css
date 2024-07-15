@@ -231,7 +231,8 @@ body {
   ---------------------------------*/
   .skill-subtitle {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 50px;
   }
   
   .skill-subtitle span {
@@ -240,11 +241,12 @@ body {
     background-color: #f0f0f0;
     border-radius: 20px;
     font-weight: bold;
+    font-size: 15px;
   }
-  
+
   .skill-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 30px;
   }
   
@@ -252,6 +254,7 @@ body {
     background-color: #fff;
     border-radius: 6px;
     height: 400px; /* 任意の固定値 */
+    width: 375px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -259,6 +262,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%; /* 高さを100%に設定 */
+    margin: 0 auto;
   }
   
   .skill-item:hover {
@@ -271,16 +275,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/skill/program.jpg) center center;
-    background-size: cover;
+    background-size: contain; /* 画像のアスペクト比を維持しながら最大表示 */
     position: relative;
-  
   
     color: rgb(0, 0, 0);
     font-size: 1.5rem;
     font-weight: bold;
   }
   
+  .skill-img.os {
+    background: url(../img/skill/back/os.jpg) center center;
+  }
+  .skill-img.infra {
+    background: url(../img/skill/back/infra.jpg) center center;
+  }
+  .skill-img.program {
+    background: url(../img/skill/back/program.jpg) center center;
+  }
+  .skill-img.tool {
+    background: url(../img/skill/back/tool.jpg) center center;
+  }
+  .skill-img.present {
+    background: url(../img/skill/back/presen.jpg) center center;
+  }
+
+
   .skill-img-content {
     display: flex;
     align-items: center;
@@ -291,9 +310,10 @@ body {
   }
   
   .skill-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     margin-right: 15px;
+    border-radius: 0%;
   }
   
   .skill-img::before {
@@ -307,7 +327,7 @@ body {
   }
   
   .skill-img span {
-    font-size: 2rem;
+    font-size: 2.2rem;
     position: relative;
     z-index: 1;
   }
