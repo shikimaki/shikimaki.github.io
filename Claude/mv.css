@@ -1,0 +1,97 @@
+body {
+  font-family: "Montserrat","Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  font-size: 15px;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+a {
+  transition: opacity .3s;
+  text-decoration: none;
+  color: #1ca9e3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  border-style: none;
+}
+
+
+
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
+
+.wrapper {
+  padding-top: 73px; /* ヘッダとメインビジュアルの間 */
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 80px; /* 全体の横幅 */
+}
+
+.section {
+  padding: 90px 0; /* 各セクション幅 */
+}
+
+.section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: .05em;
+  color: #333;
+}
+
+
+  /*--------------------------------
+   ## メインビジュアル ##########################################################################
+  ---------------------------------*/
+  .mv {
+    /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
+    background: url(../img/rustic-3441673_1920.jpg) center center;
+    opacity: 0.6;
+    background-size: auto 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65vh;
+    text-align: center;
+  }
+  
+  .mv-container {
+    padding: 0 40px; /* タイトル横幅 */
+  }
+  
+  .mv-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;   /* 上下位置 */
+    margin-bottom: 5px; /* タイトル下幅 */
+    letter-spacing: .15em; /* 文字間 */
+  }
+  .mv-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 40px;
+    letter-spacing: .08em;
+  }
+  
+  .mv-text {
+    font-size: 16px;
+    line-height: 1.8;
+  }

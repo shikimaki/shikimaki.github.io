@@ -1,90 +1,243 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ここはタイトル？.</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='インフラエンジニアAkito Takamatsu ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Akito Takamatsuのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Akito Takamatsuのポートフォリオサイトです" />
+  <title>Akito Takamatsu ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+
+  <!-- 追加(スキル) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- 追加(資格) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="#profile">Profile</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#experience">Career</a></li>
-            <li><a href="#works">Result</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <div class="wrapper">
 
-    <header>
-        <div class="container">
-            <h1>Portfolio by takamatsu.</h1>
-            <h1_2>Infra Engineer<br>
-            </h1_2>
-        </div>
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">Akito Takamatsu.</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <!-- /header -->
 
-    <main>
-<!-- プロフィール -->
-        <section id="profile">
-          <div class="container">
-              <h2><i class="profile-icon"></i>プロフィール</h2>
-              <div class="profile-content">
-                  <img src="/img/icon/icon.png" alt="ProfilePic" class="profile-img">
-                  <p class="profile-description">
-                      インフラエンジニアとして、AWSとLinuxの専門知識を活かし、安定性と効率性の高いシステム構築に貢献しています。
-                  </p>
+    <main class="content">
+
+      <!-- メインビジュアル -->
+      <div class="mv">
+        <div class="mv-container">
+          <p class="mv-title">Portfolio by takamatsu.</p>
+          <p class="mv-subtitle">Infra Engineer</p>
+          <p class="mv-text">
+            ユーザーとお客様が心から満足できる<br class="sp-only">サイトをお作りいたします。<br>
+            デザインとコーディングは<br class="sp-only">おまかせください。<br>
+          </p>
+        </div>
+      </div>
+      <!-- /mv -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-sample-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design / Coding(Responsive) / WordPress</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Design</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- Skill -->
+      <section id="skill" class="skill section">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+            <div class="program skill-subtitle ">
+              <span>プログラミング言語</span>
+            </div>
+
+            <div class="skill-list">
+                <div class="skill-item">
+                  <div class="skill-img">
+                    <div class="skill-img-content">
+                        <img src="img/icon/icon.jpg" alt="WordPress icon" class="skill-icon">
+                        <span>WordPress</span>
+                    </div>
+                  </div>
+                    <div class="skill-body">
+                        <p class="skill-text">Expert in creating custom WordPress themes and plugins, optimizing performance, and ensuring responsive design.</p>
+                        <div class="skill-rating">
+                            <span class="star">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-img">
+                    <div class="skill-img-content">
+                        <img src="img/icon/icon.jpg" alt="WordPress icon" class="skill-icon">
+                        <span>WordPress</span>
+                    </div>
+                  </div>
+                    <div class="skill-body">
+                        <p class="skill-text">Expert in creating custom WordPress themes and plugins, optimizing performance, and ensuring responsive design.</p>
+                        <div class="skill-rating">
+                            <span class="star">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-img">
+                    <div class="skill-img-content">
+                        <img src="img/icon/icon.jpg" alt="WordPress icon" class="skill-icon">
+                        <span>WordPress</span>
+                    </div>
+                  </div>
+                    <div class="skill-body">
+                        <p class="skill-text">Expert in creating custom WordPress themes and plugins, optimizing performance, and ensuring responsive design.</p>
+                        <div class="skill-rating">
+                            <span class="star">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="skill-item">
+                    <img src="img/works-sample-thumb.jpg" alt="Responsive Web Design" class="skill-img">
+                    <div class="skill-body">
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <p class="skill-text">Skilled in creating fluid layouts that adapt seamlessly to various screen sizes and devices.</p>
+                        <div class="skill-rating">
+                            <span class="star">★★★★★</span>
+                        </div>
+                    </div>
+                </div> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="title">ABOUT</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/icon/icon.jpg" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              </p>
+              <p>
+                テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+              </p>
+            </div>
+          </div>
+        </div>
+      <!-- </section> -->
+      <!-- /about -->
+
+      <!-- 資格情報 -->
+        <div class="cert_container">
+          <h1 class="cert_title">保有資格</h1>
+          <div class="qualification-list">
+
+            <div class="qualification-item">
+              <img src="img/cert/Ipass.png" alt="aws" class="qualification-icon">
+              <!-- <div class="qualification-icon"><i class="fas fa-passport "></i></div> -->
+              <div class="qualification-info">
+                  <div class="qualification-name">ITパスポート</div>
+                  <div class="qualification-date">取得日: 2022年5月</div>
+              </div>
+            </div>
+            <div class="qualification-item">
+              <!-- <div class="qualification-icon"><i class="fab fa-linux"></i></div> -->
+              <img src="img/cert/lpic2.png" alt="aws" class="qualification-icon">
+              <div class="qualification-info">
+                  <div class="qualification-name">Linux Professional Institute LPIC-2</div>
+                  <div class="qualification-date">取得日: 2022年10月</div>
+              </div>
+            </div>
+            <div class="qualification-item">
+              <!-- <div class="qualification-icon"><i class="fas fa-italic"></i></div> -->
+              <img src="img/cert/itil.png" alt="aws" class="qualification-icon">
+              <div class="qualification-info">
+                  <div class="qualification-name">ITIL Foundation</div>
+                  <div class="qualification-date">取得日: 2022年11月</div>
+              </div>
+            </div>
+            <div class="qualification-item">
+              <!-- <div class="qualification-icon"><i class="fas fa-database"></i></div> -->
+              <img src="img/cert/oracle.png" alt="aws" class="qualification-icon">
+              <div class="qualification-info">
+                  <div class="qualification-name">Oracle Master Bronze</div>
+                  <div class="qualification-date">取得日: 2022年12月</div>
+              </div>
+            </div>
+            <div class="qualification-item">
+                  <!-- <div class="qualification-icon"><i class="fab fa-aws "></i></div> -->
+                  <img src="img/cert/saa.png" alt="aws" class="qualification-icon">
+                  <div class="qualification-info">
+                      <div class="qualification-name">AWS Certified Solutions Architect - Associate</div>
+                      <div class="qualification-date">取得日: 2023年2月</div>
+                  </div>
+              </div>
+              <div class="qualification-item">
+                <!-- <div class="qualification-icon"><i class="fab fa-windows "></i></div> -->
+                <img src="img/cert/fundamentals.png" alt="aws" class="qualification-icon">
+                <div class="qualification-info">
+                    <div class="qualification-name">Azure fundamentals</div>
+                    <div class="qualification-date">取得日: 2023年2月</div>
+                </div>
               </div>
           </div>
-        </section>
-
-<!-- 資格情報 -->
-        <section id="certifications">
-            <div class="container">
-                <h2>所持資格</h2>
-                <div class="certifications-table">
-                    <div class="certifications-column valid">
-                        <h3 class="certification-category">有効な資格</h3>
-                        <ul class="certification-list">
-                            <li>
-                                <div class="cert-content">
-                                    <img src="/img/icon/icon.png" class="cert-icon aws">
-                                    <div class="cert-info">
-                                        <span class="cert-name">AWS Certified Solutions Architect</span>
-                                        <span class="cert-date">2023年5月取得</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="cert-content">
-                                    <img src="/img/icon/icon.png" class="cert-icon lpic">
-                                    <div class="cert-info">
-                                        <span class="cert-name">LPIC Level 1</span>
-                                        <span class="cert-date">2022年10月取得</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="certifications-column expired">
-                        <h3 class="certification-category">失効した資格</h3>
-                        <ul class="certification-list">
-                            <li>
-                                <div class="cert-content">
-                                    <!-- <i class="cert-icon ccna"></i> -->
-                                    <img src="/img/icon/icon.png" class="cert-icon ccna">
-                                    <div class="cert-info">
-                                        <span class="cert-name">Cisco CCNA</span>
-                                        <span class="cert-date">2020年3月取得（失効）</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+          
+          <h1 class="cert_subtitle">その他</h1>
+          <div class="additional-qualifications">
+              <div class="additional-qualification-item">
+                  ・Linux Professional Institute LPIC-1 (2022年10月に上位資格取得)
+              </div>
+              <div class="additional-qualification-item">
+                  ・AWS Certified CloudPractitioner (2023年2月に上位資格取得)
+              </div>
+          </div>
+        </div>
+      </section>
 
 
 
@@ -95,66 +248,36 @@
 
 
 
-<!-- スキル一覧 -->
-        <section id="skills">
-            <div class="container">
-                <h2>スキル</h2>
-                <div class="skills">
-                    <div class="skill-item">AWS</div>
-                    <div class="skill-item">Linux</div>
-                    <div class="skill-item">ネットワーク</div>
-                    <div class="skill-item">セキュリティ</div>
-                    <div class="skill-item">Docker</div>
-                    <div class="skill-item">Kubernetes</div>
-                </div>
-            </div>
-        </section>
 
-        <section id="experience">
-            <div class="container">
-                <h2>職務経験</h2>
-                <ul>
-                    <li>クラウドインフラの設計と構築</li>
-                    <li>大規模システムの運用保守</li>
-                    <li>セキュリティ対策の実装</li>
-                    <li>パフォーマンス最適化</li>
-                </ul>
-            </div>
-        </section>
 
-        <section id="works">
-            <div class="container">
-                <h2>実績</h2>
-                <div class="works">
-                    <div class="work-item">
-                        <h3>クラウド移行プロジェクト</h3>
-                        <p>オンプレミスからAWSへの移行を成功させ、運用コストを30%削減</p>
-                    </div>
-                    <div class="work-item">
-                        <h3>セキュリティ強化</h3>
-                        <p>多層防御戦略の実装により、セキュリティインシデントを50%削減</p>
-                    </div>
-                    <div class="work-item">
-                        <h3>自動化システム構築</h3>
-                        <p>CI/CDパイプラインの導入により、デプロイ時間を75%短縮</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact">
-            <div class="container">
-                <h2>連絡先</h2>
-                <p>Email: 4ki.takamatsu@gmail.com</p>
-                <p>LinkedIn: twitter</p>
-            </div>
-        </section>
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            ご連絡は、<br class="sp-only">以下の方法にてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://discordapp.com/users/trickortrade/" target="_blank" rel="noopener">Discord</a>
+            <span class="contact-item">4ki.takamatsu [@] gmail.com</span>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p> Copyright©Akito Takamatsu. All Rights Reserved.</p>
-        </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;AKITO TAKAMATSU. All Rights Reserved.</div>
     </footer>
+    <!-- /footer -->
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>
 </body>
 </html>
