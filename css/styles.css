@@ -86,11 +86,11 @@ section {
     padding: 60px 0;    /* 上幅 */
     max-width: 1200px;  /* コンテンツの最大幅を設定 */
     margin: 0 auto;     /* 中央揃え */
-    width: 85%;         /* 画面幅の90%を使用 */
+    width: 80%;         /* 画面幅の85%を使用 */
 }
 
 
-/* ## profile ############################################# */
+/* ## profile ############################################################################### */
 .profile-icon {
     display: inline-block;
     width: 24px;
@@ -124,31 +124,24 @@ section {
 }
 /* ここまで */
 
-/* ## 資格 ########################### */
-#certifications {
-    background-color: #f8f9fa;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 28px;
-}
-
+/* ## 資格 ######################################################################## */
 .certifications-table {
     display: flex;
     justify-content: space-around;
-    gap: 30px;
+    /* justify-content: space-between;  */
+    gap: 0px;
+    background-color: #f8f9fa;
 }
 
 .certifications-column {
     flex: 1;
-    max-width: 400px;
+    max-width: 450px;
+    /* max-width: 45%;  */
 }
 
 .certification-category {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     margin-bottom: 20px;
 }
@@ -175,32 +168,20 @@ section {
 .cert-content {
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
 
 .cert-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     margin-right: 15px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     flex-shrink: 0;
-}
-
-.cert-icon.aws {
-    background-image: url('/img/icon/icon.png');
-}
-
-.cert-icon.lpic {
-    background-image: url('path-to-lpic-icon.png');
-}
-
-.cert-icon.ccna {
-    background-image: url('path-to-ccna-icon.png');
 }
 
 .cert-info {
@@ -210,7 +191,7 @@ section {
 
 .cert-name {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .cert-date {
@@ -219,21 +200,10 @@ section {
 }
 
 .certifications-column.expired .cert-content {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
-@media (max-width: 768px) {
-    .certifications-table {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .certifications-column {
-        width: 100%;
-    }
-}
-
-/* ## スキル ################################# */
+/* ## スキル ############################################################################# */
 .skills {
     display: flex;
     flex-wrap: wrap;
